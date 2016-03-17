@@ -21,12 +21,6 @@ header h1, header a, footer h1, footer a {
   font-weight: 400;
 }
 
-@media (max-width: 700px) {
-  header h1, header a, footer h1, footer a {
-    font-size: 12rem;
-  }
-}
-
 header h2, header p, footer h2, footer p {
   color: #FFCB00;
   font-family: "Sacramento";
@@ -69,6 +63,18 @@ header .bird {
 
 header .bird svg {
   margin: 0;
+}
+
+@media (max-width: 700px) {
+  header .wrapper h1 {
+    font-size: 11rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header .wrapper h1 {
+    font-size: 8rem;
+  }
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -246,11 +252,24 @@ section {
   text-align: center;
 }
 
+@media (max-width: 480px) {
+  section {
+    padding: 8% 3rem 12%;
+  }
+}
+
 p {
   padding-bottom: 2rem;
   color: #F6F6F6;
   font-family: "Quicksand";
   font-size: 4rem;
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
 }
 
 label {
@@ -443,7 +462,13 @@ label {
   padding: 1rem;
   position: absolute;
   bottom: 0.2rem;
-  right: 10.2%;
+  right: 10%;
+}
+
+@media (max-width: 1000px) {
+  .answer input[type=reset] {
+    right: 10.1%;
+  }
 }
 
 h3 {

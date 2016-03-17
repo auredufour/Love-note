@@ -2,6 +2,9 @@ section {
 	margin: 0 auto;
 	padding: 8% 5rem 12%;
 	text-align: center;
+	@media (max-width: 480px){
+		padding: 8% 3rem 12%;
+	}
 }
 
 p {
@@ -9,6 +12,10 @@ p {
 	color: #F6F6F6;
 	font-family: "Quicksand";
 	font-size: 4rem;
+	@media (max-width: 480px){
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
 }
 
 label {
@@ -191,5 +198,6 @@ label {
 
 		@media (max-width: 1000px) {
 			right: 10.1%;
-			}
+		}
+	}
 }

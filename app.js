@@ -122,7 +122,7 @@ var background = {
 // 	};
 $( window ).resize(function() {
    var currentWidth = $(window).width();
-   if (currentWidth => 885){
+   if (currentWidth >= 885){
         $('#title').arctext({radius: 700});
         console.log(currentWidth);
     } else {
